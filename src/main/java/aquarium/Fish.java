@@ -6,7 +6,6 @@ public abstract class Fish {
     private int weight;
     private String color;
     private boolean memoryLoss;
-    protected int growth;
 
     public Fish(String name, int weight, String color) {
         this.name = name;
