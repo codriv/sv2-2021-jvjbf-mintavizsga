@@ -1,11 +1,12 @@
 package aquarium;
 
-public abstract class Fish {
+public class Fish {
 
     private String name;
     private int weight;
     private String color;
     private boolean memoryLoss;
+    protected int growth;
 
     public Fish(String name, int weight, String color) {
         this.name = name;
@@ -42,5 +43,7 @@ public abstract class Fish {
                 name, weight, color, memoryLoss);
     }
 
-    public abstract void feed();
+    public void feed() {
+        setWeight(growth);
+    }
 }
