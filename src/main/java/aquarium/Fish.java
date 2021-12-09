@@ -1,6 +1,6 @@
 package aquarium;
 
-public class Fish {
+public abstract class Fish {
 
     private String name;
     private int weight;
@@ -43,7 +43,5 @@ public class Fish {
                 name, weight, color, memoryLoss);
     }
 
-    public void feed() {
-        setWeight(growth);
-    }
+    public abstract void feed();
 }
