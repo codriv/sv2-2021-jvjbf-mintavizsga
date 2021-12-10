@@ -7,10 +7,9 @@ public class Aquarium {
 
     private List<Fish> fishes = new ArrayList<>();
     public static final int CAPACITY = 20;
-    private int volumeRequired = 5;
 
     public void addFish(Fish fish) {
-        if ((fishes.size() * volumeRequired) <= CAPACITY - volumeRequired) {
+        if ((fishes.size() + 1) * Fish.VOLUME_REQUIRED <= CAPACITY) {
             fishes.add(fish);
         } else {
             throw new IllegalStateException("Can not add fish because there is no more space.");

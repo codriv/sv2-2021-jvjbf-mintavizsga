@@ -7,6 +7,7 @@ public class Fish {
     private String color;
     private boolean memoryLoss;
     private int growth;
+    public static final int VOLUME_REQUIRED = 5;
 
     public Fish(String name, int weight, String color) {
         this.name = name;
